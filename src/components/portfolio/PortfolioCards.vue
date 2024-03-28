@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 
 defineProps<{
   title: string
@@ -16,7 +16,7 @@ defineProps<{
       <CardDescription>{{ description }}</CardDescription>
     </CardHeader>
     <CardContent>
-      <img v-if="image" :src="image" class="w-full h-[300px] rounded-md" />
+      <img v-if="image" :src="image" class="w-full object-scale-down h-[300px] rounded-md" />
     </CardContent>
   </Card>
 </template>

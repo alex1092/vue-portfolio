@@ -1,3 +1,5 @@
+import portfolioImage from './assets/images/portfolio-image.png'
+
 export const config = {
     homePage: {
         title: 'Welcome to my portfolio',
@@ -13,6 +15,15 @@ export const config = {
 
     portfolio: {
         projects: [
+            {
+                title: 'This Portfolio',
+                siteUrl: 'https://alex-portfolio-vue.netlify.app/',
+                description: 'Built with Vue3',
+                longDescription: 'I built this portfolio using vue 3, just for fun and to learn vue',
+                image: portfolioImage,
+                gitHubUrl: 'https://github.com/alex1092/vue-portfolio',
+                alt: 'This Portfolio'
+            },
             {
                 title: 'Ladbrokes Australia',
                 siteUrl: 'https://apps.apple.com/au/app/ladbrokes-online-betting/id710375963',
