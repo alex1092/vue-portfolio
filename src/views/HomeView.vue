@@ -1,12 +1,20 @@
 <template>
-  <div class="flex flex-col h-screen">
-    <div class="flex-1 flex justify-center items-center">
-      <img src="../assets/images/avatar.jpeg" alt="Avatar" class="w-52 h-52 rounded-full" />
+  <div class="flex flex-col md:flex-row h-screen md:container">
+    <div class="flex-1 flex justify-center items-center md:order-2">
+      <img
+        :src="image"
+        alt="Avatar"
+        class="w-52 h-52 md:w-[350px] md:h-[350px] rounded-full md:rounded-md"
+      />
     </div>
-    <div class="my-auto align-top justify-start flex-1">
-      <h1 class="text-6xl text-center font-bold">{{ config.homePage.title }}</h1>
-      <p class="text-2xl m-2 text-center font-bold">{{ config.homePage.subtitle }}</p>
-      <SocialsIcons class="justify-center items-center" />
+    <div class="my-auto align-top justify-start md:ml-10 flex-1 md:order-1">
+      <h1 class="text-6xl md:text-8xl text-center md:text-left font-bold">
+        {{ config.homePage.title }}
+      </h1>
+      <p class="text-2xl md:text-4xl text-center font-bold md:text-left md:my-4">
+        {{ config.homePage.subtitle }}
+      </p>
+      <SocialsIcons class="justify-center items-center md:justify-start" />
     </div>
   </div>
 </template>
@@ -14,6 +22,15 @@
 <script setup lang="ts">
 import SocialsIcons from '@/components/SocialsIcons.vue'
 import { config } from '@/config'
+
+import { useMobileDetection } from '@/lib/utils'
+
+import avatarJpeg from '@/assets/images/avatar.jpeg'
+import avatarPng from '@/assets/images/avatar-no-background.png'
+
+const { isMobile } = useMobileDetection()
+
+const image = isMobile ? avatarJpeg : avatarPng
 </script>
 
 <style>

@@ -1,14 +1,5 @@
 <script setup lang="ts">
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle
-} from '@/components/ui/card'
-
-// import { ExternalLink } from 'lucide-vue-next'
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 
 defineProps<{
   title: string
@@ -27,6 +18,5 @@ defineProps<{
     <CardContent>
       <img v-if="image" :src="image" class="w-full h-[300px] rounded-md" />
     </CardContent>
-    <CardFooter> </CardFooter>
   </Card>
 </template>
