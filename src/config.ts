@@ -1,5 +1,8 @@
 import portfolioImage from "./assets/images/portfolio-image.png"
-
+import ethereumHomePageImage from "./assets/images/Home-ethereum-org.png"
+import wisesheetsImage from "./assets/images/wisesheets-home-page.png"
+import ladbrokesMockup from './assets/images/ladbrokes-mockup-mobile.png'
+import nedsMockup from './assets/images/neds-mobile-mockup.png'
 export const config = {
   homePage: {
     title: "Welcome to my portfolio",
@@ -30,8 +33,7 @@ export const config = {
         description: "Native Core Develoer",
         longDescription:
           "Ladbrokes is one of Australia's largest betting platforms, I spearheaded the development and creation of their design system, essentially creating a white label betting solution and making it possible for us to create multiple brands under one codebase",
-        image:
-          "https://images.unsplash.com/photo-1682685794761-c8e7b2347702?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXxzVm44Mksxa2tjMHx8ZW58MHx8fHx8",
+        image: ladbrokesMockup,
         alt: "Ladbrokes Australia"
       },
       {
@@ -40,8 +42,7 @@ export const config = {
         description: "Native Core Develoer",
         longDescription:
           "Neds is a mobile app that allows users to bet on their favourite sports. I worked on the core team and had major influence over the app and its future",
-        image:
-          "https://images.unsplash.com/photo-1682685797365-41f45b562c0a?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8NHxzVm44Mksxa2tjMHx8ZW58MHx8fHx8",
+        image: nedsMockup,
         alt: "Neds"
       },
       {
@@ -60,8 +61,7 @@ export const config = {
         gitHubUrl: "https://github.com/ethereum/ethereum-org-website",
         description: "Open Source Contributor",
         longDescription: `As an Open Source Contributor to the Ethereum website, I had the privilege of working on the front-end codebase. My contributions involved implementing cutting-edge features, resolving complex bugs, and spearheading the migration to the powerful Chakra UI library. This migration not only enhanced the website's performance and user experience but also streamlined the development workflow.\n Throughout my involvement, I demonstrated a deep understanding of React, JavaScript, and modern web development practices, ensuring the delivery of high-quality, maintainable code that adhered to industry best practices.`,
-        image:
-          "https://images.unsplash.com/photo-1707343844152-6d33a0bb32c3?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        image: ethereumHomePageImage,
         alt: "Ethereum Org"
       },
       {
@@ -70,8 +70,7 @@ export const config = {
         description: "Full stack developer",
         longDescription:
           "Wisesheets is a powerful spreadsheet add-on that provides instant access to comprehensive financial data and stock metrics across global exchanges. It enables custom stock screening, model population with real-time data, and effortless comparison of thousands of stocks, streamlining financial analysis for investors within their familiar spreadsheet environment.",
-        image:
-          "https://images.unsplash.com/photo-1525197134674-4c3f02da2745?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        image: wisesheetsImage,
         alt: "Wise sheets"
       }
     ]

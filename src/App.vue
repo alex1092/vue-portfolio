@@ -22,5 +22,3 @@ const { isMobile } = useMobileDetection()
 
   <RouterView />
 </template>
-
-<style scoped></style>

@@ -8,7 +8,7 @@ import { Menu } from "lucide-vue-next"
   <Drawer>
     <DrawerTrigger>
       <div class="p-2">
-        <Menu :size="42" />
+        <Menu class="w-8 h-8" />
       </div>
     </DrawerTrigger>
     <DrawerContent>

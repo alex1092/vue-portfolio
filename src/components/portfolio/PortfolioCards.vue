@@ -16,7 +16,7 @@ defineProps<{
       <CardDescription>{{ description }}</CardDescription>
     </CardHeader>
     <CardContent>
-      <img v-if="image" :src="image" class="w-full object-scale-down h-[300px] rounded-md" />
+      <img v-if="image" :src="image" class="w-full object-cover h-[300px] rounded-md" />
     </CardContent>
   </Card>
 </template>
