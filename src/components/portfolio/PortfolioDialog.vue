@@ -5,10 +5,10 @@ import {
   DialogFooter,
   DialogHeader,
   DialogTitle
-} from '@/components/ui/dialog'
+} from "@/components/ui/dialog"
 
-import { ExternalLink } from 'lucide-vue-next'
-import { Github } from 'lucide-vue-next'
+import { ExternalLink } from "lucide-vue-next"
+import { Github } from "lucide-vue-next"
 
 defineProps<{
   title: string

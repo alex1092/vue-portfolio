@@ -1,13 +1,13 @@
 <script setup lang="ts">
-import { useColorMode } from '@vueuse/core'
-import { Icon } from '@iconify/vue'
-import { Button } from '@/components/ui/button'
+import { useColorMode } from "@vueuse/core"
+import { Icon } from "@iconify/vue"
+import { Button } from "@/components/ui/button"
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger
-} from '@/components/ui/dropdown-menu'
+} from "@/components/ui/dropdown-menu"
 
 const mode = useColorMode()
 </script>

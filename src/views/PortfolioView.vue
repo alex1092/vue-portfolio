@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import PortfolioCards from '@/components/portfolio/PortfolioCards.vue'
+import PortfolioCards from "@/components/portfolio/PortfolioCards.vue"
 
-import { config } from '@/config'
+import { config } from "@/config"
 
-import PortfolioDialog from '@/components/portfolio/PortfolioDialog.vue'
-import DialogTrigger from '@/components/ui/dialog/DialogTrigger.vue'
-import Dialog from '@/components/ui/dialog/Dialog.vue'
+import PortfolioDialog from "@/components/portfolio/PortfolioDialog.vue"
+import DialogTrigger from "@/components/ui/dialog/DialogTrigger.vue"
+import Dialog from "@/components/ui/dialog/Dialog.vue"
 </script>
 
 <template>
