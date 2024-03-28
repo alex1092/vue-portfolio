@@ -17,6 +17,8 @@
   },
   "dependencies": {
     "@vueuse/core": "^10.9.0",
+    "@web3-onboard/injected-wallets": "^2.10.13",
+    "@web3-onboard/vue": "^2.7.13",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
     "lucide-vue": "^0.363.0",

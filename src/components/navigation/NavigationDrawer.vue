@@ -22,12 +22,13 @@ import { Menu } from "lucide-vue-next"
         <DrawerClose>
           <RouterLink class="text-xl hover:opacity-70" to="/portfolio">Portfolio</RouterLink>
         </DrawerClose>
-        <!-- <DrawerClose>
-          <RouterLink class="text-xl hover:opacity-70" to="/blog">Blog</RouterLink>
-        </DrawerClose>
         <DrawerClose>
+          <RouterLink class="text-xl hover:opacity-70" to="/web3">Web3</RouterLink>
+        </DrawerClose>
+        <!-- <DrawerClose>
           <RouterLink class="text-xl hover:opacity-70" to="/contact">Contact</RouterLink>
         </DrawerClose> -->
+
         <ColorToggle />
       </nav>
     </DrawerContent>
