@@ -13,13 +13,13 @@ const router = createRouter({
       path: "/portfolio",
       name: "portfolio",
       component: () => import("../views/PortfolioView.vue")
-    }
-    // {
-    //   path: '/about',
-    //   name: 'about',
+    },
+    {
+      path: '/web3',
+      name: 'web3',
 
-    //   component: () => import('../views/AboutView.vue')
-    // },
+      component: () => import('../views/Web3View.vue')
+    },
   ]
 })
 
