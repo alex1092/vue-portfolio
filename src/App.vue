@@ -11,7 +11,7 @@ const { isMobile } = useMobileDetection()
     <div v-if="!isMobile" class="m-3">
       <nav class="flex justify-center items-center gap-10">
         <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/test">Portfolio</RouterLink>
+        <RouterLink to="/portfolio">Portfolio</RouterLink>
       </nav>
     </div>
 

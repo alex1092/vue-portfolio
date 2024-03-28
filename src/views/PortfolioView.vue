@@ -5,8 +5,8 @@ import { config } from '@/config'
 </script>
 
 <template>
-  <div class="flex flex-col gap-10 mt-20 items-center justify-center">
-    <h1 class="text-4xl font-bold">Portfolio</h1>
+  <h1 class="text-4xl font-bold pl-3 md:pl-10 pt-16">Portfolio</h1>
+  <div class="flex flex-col md:flex-row md:flex-wrap gap-10 items-center p-6 justify-center">
     <PortfolioCards
       v-for="project in config.portfolio.projects"
       :key="project.title"

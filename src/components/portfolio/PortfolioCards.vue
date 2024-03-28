@@ -19,19 +19,14 @@ defineProps<{
 </script>
 
 <template>
-  <Card class="w-[450px] hover:scale-105 transition-all">
+  <Card class="w-[350px] md:w-[450px] shadow-sm hover:scale-105 transition-all">
     <CardHeader>
       <CardTitle>{{ title }}</CardTitle>
       <CardDescription>{{ description }}</CardDescription>
     </CardHeader>
     <CardContent>
-      <img v-if="image" :src="image" />
+      <img v-if="image" :src="image" class="w-full h-[300px] rounded-md" />
     </CardContent>
-    <CardFooter>
-      <!-- <Button variant="outline"> Cancel </Button>
-      <Button>Deploy</Button> -->
-
-      <!-- <ExternalLink class="opacity-50 hover:opacity-80" /> -->
-    </CardFooter>
+    <CardFooter> </CardFooter>
   </Card>
 </template>
