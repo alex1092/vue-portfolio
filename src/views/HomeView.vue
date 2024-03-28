@@ -38,4 +38,10 @@ const image = isMobile ? avatarJpeg : avatarPng
   overflow: hidden;
   height: 90vh;
 }
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
 </style>
