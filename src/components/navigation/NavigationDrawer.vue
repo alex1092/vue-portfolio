@@ -1,14 +1,14 @@
 <script setup lang="ts">
-import { Drawer, DrawerClose, DrawerContent, DrawerTrigger } from '@/components/ui/drawer'
-import ColorToggle from '../ColorToggle.vue'
-import { Menu } from 'lucide-vue-next'
+import { Drawer, DrawerClose, DrawerContent, DrawerTrigger } from "@/components/ui/drawer"
+import ColorToggle from "../ColorToggle.vue"
+import { Menu } from "lucide-vue-next"
 </script>
 
 <template>
   <Drawer>
     <DrawerTrigger>
       <div class="p-2">
-        <Menu :size="32" />
+        <Menu :size="42" />
       </div>
     </DrawerTrigger>
     <DrawerContent>
