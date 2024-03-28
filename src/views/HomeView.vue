@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col md:flex-row md:container no-scroll">
+  <div class="flex flex-col md:flex-row md:container h-[80vh]">
     <div class="flex-1 flex justify-center items-center md:order-2">
       <img
         :src="image"
@@ -32,16 +32,3 @@ const { isMobile } = useMobileDetection()
 
 const image = isMobile ? avatarJpeg : avatarPng
 </script>
-
-<style scoped>
-.no-scroll {
-  overflow: hidden;
-  height: 90vh;
-}
-
-html,
-body {
-  height: 100%;
-  overflow: hidden;
-}
-</style>
