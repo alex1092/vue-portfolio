@@ -8,7 +8,7 @@ import {
   CardTitle
 } from '@/components/ui/card'
 
-import { ExternalLink } from 'lucide-vue-next'
+// import { ExternalLink } from 'lucide-vue-next'
 
 defineProps<{
   title: string
