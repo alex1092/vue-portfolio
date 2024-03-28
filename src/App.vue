@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from "vue-router"
-import { useMobileDetection } from "@lib/utils"
+import { useMobileDetection } from "@/lib/utils"
 import NavigationDrawer from "./components/navigation/NavigationDrawer.vue"
 import ColorToggle from "./components/ColorToggle.vue"
 
