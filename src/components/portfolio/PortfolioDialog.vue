@@ -20,7 +20,7 @@ defineProps<{
 </script>
 
 <template>
-  <DialogContent class="sm:max-w-[425px] max-w-[90vw]">
+  <DialogContent class="sm:max-w-[425px] rounded-sm max-w-[90vw]">
     <DialogHeader>
       <DialogTitle>{{ title }}</DialogTitle>
       <DialogDescription>
@@ -28,7 +28,7 @@ defineProps<{
       </DialogDescription>
     </DialogHeader>
     <div v-if="longDescription">{{ longDescription }}</div>
-    <DialogFooter>
+    <DialogFooter class="flex justify-end gap-2 flex-row">
       <a v-if="siteUrl" :href="siteUrl" target="_blank">
         <ExternalLink class="opacity-60 hover:opacity-100" />
       </a>
@@ -36,9 +36,6 @@ defineProps<{
       <a v-if="gitHubUrl" :href="gitHubUrl" target="_blank">
         <Github class="opacity-60 hover:opacity-100" />
       </a>
-
-      <!-- <Button type="submit"> Save changes </Button> -->
     </DialogFooter>
   </DialogContent>
-  <!-- </Dialog> -->
 </template>
