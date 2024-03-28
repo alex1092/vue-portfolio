@@ -41,7 +41,7 @@ export const config = {
             {
                 title: 'Ethereum Org',
                 siteUrl: 'https://ethereum.org/en/',
-                gitHubUrl: 'https://github.com/alex1092/tab',
+                gitHubUrl: 'https://github.com/ethereum/ethereum-org-website',
 
                 description: 'Front end developer',
                 longDescription: 'A really long descripton of what i did there',

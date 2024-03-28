@@ -24,6 +24,8 @@ import Dialog from '@/components/ui/dialog/Dialog.vue'
         :title="project.title"
         :longDescription="project.longDescription"
         :description="project.description"
+        :siteUrl="project.siteUrl"
+        :gitHubUrl="project.gitHubUrl"
         :image="project.image"
       />
     </Dialog>

@@ -7,27 +7,37 @@ import {
   DialogTitle
 } from '@/components/ui/dialog'
 
+import { ExternalLink } from 'lucide-vue-next'
+import { Github } from 'lucide-vue-next'
+
 defineProps<{
   title: string
   description?: string
-
-  long
+  siteUrl?: string
+  gitHubUrl?: string
+  longDescription?: string
 }>()
 </script>
 
 <template>
-  <DialogContent class="sm:max-w-[425px]">
+  <DialogContent class="sm:max-w-[425px] max-w-[90vw]">
     <DialogHeader>
       <DialogTitle>{{ title }}</DialogTitle>
       <DialogDescription>
         {{ description }}
       </DialogDescription>
     </DialogHeader>
-    a really long descripton of what i did there
+    <div v-if="longDescription">{{ longDescription }}</div>
     <DialogFooter>
-      <!-- <Button type="submit"> Save changes </Button> -->
+      <a v-if="siteUrl" :href="siteUrl" target="_blank">
+        <ExternalLink class="opacity-60 hover:opacity-100" />
+      </a>
 
-      Go to github go to url
+      <a v-if="gitHubUrl" :href="gitHubUrl" target="_blank">
+        <Github class="opacity-60 hover:opacity-100" />
+      </a>
+
+      <!-- <Button type="submit"> Save changes </Button> -->
     </DialogFooter>
   </DialogContent>
   <!-- </Dialog> -->
